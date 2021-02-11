@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Monthly Payment </title>
+        <link rel="stylesheet" type="text/css" href="monthlyPayment.css" />
+        <script type="textjavascript" src="monthlyPayment.js"></script>
+    </head>
+    <body>
+        <div id= "content">
+        <h1>Monthly Payment Calculator</h1>
+        <p>
+            Enter the values below and click "Calculate".
+        </p>
+        <div id="loanCalc">
+        </div>
+        <form name= "loandata">
+            <label for = "fname"> Full Name:</label>
+            <input type = "text" id= "fname" name="fname"><br><br>
+
+            <label for = "initAmount"> Initial Loan Amount:</label>
+            <Input type = "number" id= "intAmount" name= "initAmount" min "1">
+                
+            <label for = "Months"> Number of Months of Loan:</label>
+            <input type = "number" id= "months" name= "months" min= "1"> <br><br>
+            
+            <label for = "Interest"> Annual Interest:</label>
+            <Input type = "number" id= "interest" name= "interest" min "0" max"100">
+            
+            <input type = "button" value"calculate"onclick="calculation();"
+                
+            <label id = "pay" for "payment">Monthly Payment:</label>
+            <input type = "text" id="payment"name="payment">
+        </form>
+    </body>
+</html>
+        

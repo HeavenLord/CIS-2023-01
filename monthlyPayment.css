@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1122BB;
+}
+#content {
+    border-radius: 25px;
+    box-shadow: 3px 20x #d1d1e0;
+    margin: 10px auto;
+    padding: 5px 20px;
+    background: white;
+    border: thick solid black;
+    border-style: groove;
+    width: 400px;
+    background-image: linear-gradiant(to right, rgba(209,209,224 0), rgba(209, 209, 224, 1));
+}
+#monthlyPayment, #total {
+    color: black;
+}
+loanCalc label {
+    display: black;
+    width: 10em;
+    text-align: right;
+    padding-right: 1em;
+}
