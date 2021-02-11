@@ -3,22 +3,38 @@ body {
     background: #1122BB;
 }
 #content {
-    border-radius: 25px;
-    box-shadow: 3px 20x #d1d1e0;
-    margin: 10px auto;
-    padding: 5px 20px;
+    border-radius: 60px;
+    margin: 40px auto;
+    padding: 30px 50px;
     background: white;
     border: thick solid black;
     border-style: groove;
-    width: 400px;
-    background-image: linear-gradiant(to right, rgba(209,209,224 0), rgba(209, 209, 224, 1));
+    width: 600px;
 }
-#monthlyPayment, #total {
-    color: black;
+h1 {
+    text-align: center;
 }
-loanCalc label {
-    display: black;
-    width: 10em;
+p {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 20em;
     text-align: right;
     padding-right: 1em;
+    float: left;
+}
+input {
+    display: block;
+    float: left;
+    width: 80px;
+}
+#futureValue {
+    color: #000000
+}
+br {
+    clear: left;
 }

@@ -1,18 +1,32 @@
-var $ = function(id) {
-    return document.getElementById(id) ;
-} ;//$
+var $ = function(id)
+{
+    return document.getElementById(id);
+};
 
-    //DEBUG alert ("in calculate click");
+
+var calculate = function()
+{ var fullName, floatLoanAmount, floatLoanLength, floatInterestRate, monthlyPayment;
+ fullName = $("full_name");
+ floatLoanAmount = parseFloat($("loan_amount").value);
+ floatLoanLength = parseFloat($("loan_months").value);
+ floatInterestRate = (parseFloat($("annual_rate").value)/12)/100;
+ monthlyPayment = $("monthly_payment").value;
+ //DEBUG alert("Monthly Payment is" + monthlyPayment)
+ 
+  monthlyPayment = floatLoanAmount + (floatInterestRate * floatLoanLength);
+  $("monthly_payment").value = "$" + monthlyPayment.toFixed(2);
+  
+  return false;
     
-    var principal = document.loandata.initAmount.value;
-    var payments = document.loandata.years.value * 12;
-    var interest = document.loandata.months.value / 100 / 12;
-    
-    var x = Math.pow(1 + interest, payments);
-    var monthly = (principal*x*interest)/(x-1);
-    document.loandata.payment.value = '$'+round(monthly);
+};
 
-function round(x) {
-   return math.round(x*100)/100;
-}
-
+ window.onload = function () 
+{
+    $("full_name").value = "";
+    $("full_name").focus();
+    $("loan_amount").value = "";
+    $("loan_months").value = "";
+    $("monthly_payment").value();
+    $("annual_rate").value = "";
+    $("calc").onclick = calculate;
+};
